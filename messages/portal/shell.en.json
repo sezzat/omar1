@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "label": "Account navigation",
+    "home": "Home",
+    "book": "Book",
+    "bookings": "My bookings",
+    "packages": "Packages",
+    "invoices": "Invoices",
+    "profile": "Profile"
+  },
+  "signOut": "Sign out",
+  "account": "Account",
+  "backToSite": "Back to website",
+  "openMenu": "Menu",
+  "switchLanguage": "Switch to Arabic",
+  "otherLanguageName": "عربي",
+  "restoring": "Opening your account",
+  "support": "Need help?",
+  "supportText": "Contact the El Seyouf team and we will help.",
+  "supportLink": "Contact us",
+  "verifyBanner": {
+    "text": "Verify your email to pay online. We sent a link to {email}.",
+    "resend": "Send the link again",
+    "sent": "A new link is on its way.",
+    "failed": "We could not send the link. Try again in a few minutes."
+  },
+  "contactUsBanner": "New bookings are not available for your account right now. Contact the branch and we will help.",
+  "skipToContent": "Skip to content"
+}

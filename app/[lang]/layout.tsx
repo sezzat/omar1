@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Cairo, Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
-import { dirOf, getMessages, isLocale, locales } from "@/lib/i18n";
+import { dirOf, isLocale, locales } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
 import "../globals.css";
 
@@ -19,22 +17,17 @@ export const metadata: Metadata = { metadataBase: new URL(siteUrl) };
 /** Returning sessions skip the home intro; set before first paint so there is no flash. */
 const introGate = `try{if(sessionStorage.getItem("flux-intro"))document.documentElement.dataset.intro="skip"}catch(e){}`;
 
+/** Root layout: html and body only. The public site and the customer portal each add their own chrome. */
 export default async function RootLayout({ children, params }: { children: React.ReactNode; params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
-  const t = getMessages(lang);
 
   return (
     <html lang={lang} dir={dirOf(lang)} className={`${poppins.variable} ${cairo.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: introGate }} />
       </head>
-      <body>
-        <a className="skip-link" href="#main">{t.nav.skipToContent}</a>
-        <SiteHeader locale={lang} t={t} />
-        <main id="main">{children}</main>
-        <SiteFooter locale={lang} t={t} />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

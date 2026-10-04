@@ -1,26 +1,14 @@
 import { problem } from "@/lib/api";
+import { clientIp, limited } from "@/lib/rate-limit";
 
 /**
  * Contact form endpoint. In production the backend emails the branch inbox through the Email
  * adapter; no lead record is created (CRM/Leads is deferred in the BRD). Here the adapter is a stub.
  */
-const WINDOW_MS = 10 * 60 * 1000;
-const MAX_PER_WINDOW = 5;
-const hits = new Map<string, number[]>();
-
-function limited(ip: string): boolean {
-  const now = Date.now();
-  const recent = (hits.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
-  recent.push(now);
-  hits.set(ip, recent);
-  return recent.length > MAX_PER_WINDOW;
-}
-
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(req: Request) {
-  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
-  if (limited(ip)) return problem(429, "rate_limited");
+  if (limited(`contact:${clientIp(req)}`, 5, 10 * 60_000)) return problem(429, "rate_limited");
 
   let body: Record<string, unknown>;
   try {

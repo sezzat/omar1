@@ -1,6 +1,6 @@
 import type { Availability, Envelope, PublicPackageType, PublicSpace } from "./types";
 import { mockPackageTypes, mockSpaces } from "./mock-data";
-import { mockAvailability } from "./mock-availability";
+import { availabilityFor } from "@/lib/portal/availability";
 
 export * from "./types";
 
@@ -51,7 +51,7 @@ export async function getPackageTypes(): Promise<PublicPackageType[]> {
 /** Availability is never pre-rendered; the browser asks the API live. */
 export async function getAvailability(slug: string, date: string): Promise<Availability | null> {
   const space = await getSpace(slug);
-  return space ? mockAvailability(space, date) : null;
+  return space ? availabilityFor(space, date) : null;
 }
 
 /** Spaces grouped by kind, in display order, for the home and spaces pages. */

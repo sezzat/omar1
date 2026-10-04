@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AuthLink } from "./AuthLink";
 import { Icon } from "./Icon";
 import { LangSwitch } from "./LangSwitch";
 import { NavLinks, type NavItem } from "./NavLinks";
@@ -24,9 +25,7 @@ export function SiteHeader({ locale, t }: { locale: Locale; t: Messages }) {
         </nav>
         <div className="header-actions">
           <LangSwitch locale={locale} name={t.nav.otherLanguageName} label={t.nav.switchLanguage} />
-          <Link className="btn btn--ghost" href={`/${locale}/account`}>
-            {t.nav.signIn}
-          </Link>
+          <AuthLink className="btn btn--ghost" href={`/${locale}/account`} signIn={t.nav.signIn} account={t.nav.myAccount} />
           <details className="menu">
             <summary aria-label={t.nav.menu}>
               <Icon name="menu" size={22} />
