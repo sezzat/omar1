@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "siteName": "Flux Business Hub",
+    "home": {
+      "title": "Flux Business Hub | Coworking and meeting rooms in El Seyouf, Alexandria",
+      "description": "Book a hot desk or meeting room online, or request a dedicated desk or private office in El Seyouf, Alexandria."
+    },
+    "spaces": {
+      "title": "Spaces | Flux Business Hub",
+      "description": "Hot desks, meeting rooms, dedicated desks and private offices in El Seyouf, Alexandria, with live prices."
+    },
+    "packages": {
+      "title": "Packages | Flux Business Hub",
+      "description": "Prepaid hour and day packages for meeting rooms and hot desks in Alexandria."
+    },
+    "contact": {
+      "title": "Location and contact | Flux Business Hub",
+      "description": "Find Flux Business Hub in El Seyouf, Alexandria, and send us a message."
+    },
+    "about": {
+      "title": "About | Flux Business Hub",
+      "description": "Flux Business Hub runs coworking and business-hub spaces in Alexandria."
+    },
+    "account": {
+      "title": "Your account | Flux Business Hub",
+      "description": "Sign in to book spaces and manage invoices and packages."
+    },
+    "legal": {
+      "title": "{doc} | Flux Business Hub",
+      "description": "{doc} for Flux Business Hub."
+    }
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "spaces": "Spaces",
+    "packages": "Packages",
+    "contact": "Location and contact",
+    "about": "About",
+    "signIn": "Sign in",
+    "skipToContent": "Skip to content",
+    "menu": "Menu",
+    "switchLanguage": "Switch to Arabic",
+    "otherLanguageName": "عربي"
+  },
+  "common": {
+    "bookNow": "Book now",
+    "request": "Request this space",
+    "details": "Details",
+    "from": "from",
+    "perHour": "/ hour",
+    "perDay": "/ day",
+    "perMonth": "/ month",
+    "instant": "Instant booking",
+    "byRequest": "By request",
+    "capacity": "Up to {n} people",
+    "desks": "{n} desks",
+    "seats": "{n} seats",
+    "floor": "Floor {n}",
+    "photoOf": "Photo: {name}",
+    "back": "Back",
+    "breadcrumb": "Breadcrumb",
+    "branch": "El Seyouf, Alexandria"
+  },
+  "intro": {
+    "label": "Welcome to Flux Business Hub",
+    "tagline": "Your workspace, ready in Alexandria",
+    "skip": "Skip intro"
+  },
+  "kinds": {
+    "hot-desk": "Hot desk",
+    "meeting-room": "Meeting room",
+    "dedicated-desk": "Dedicated desk",
+    "private-office": "Private office"
+  },
+  "amenities": {
+    "wifi": "Fast internet",
+    "screen": "Display screen",
+    "whiteboard": "Whiteboard",
+    "coffee": "Coffee and tea",
+    "lockers": "Lockers",
+    "ac": "Air conditioning",
+    "door": "Private door",
+    "printing": "Printing"
+  },
+  "home": {
+    "heroTitle": "A ready workspace in Alexandria. Book and pay in minutes.",
+    "heroLead": "Private offices and dedicated desks by the month, hot desks by the day, meeting rooms by the hour.",
+    "browse": "Browse spaces",
+    "points": [
+      "Instant confirmation for hot desks and meeting rooms",
+      "Your invoice arrives by email after every booking",
+      "You pay on a secure page and we never store your card"
+    ],
+    "heroPhoto": "shared workspace",
+    "spacesTitle": "Choose your space",
+    "spacesLead": "Prices and availability come live from the Flux system and update as soon as the team changes them.",
+    "viewAll": "See all spaces",
+    "flowsTitle": "Two clear paths, depending on the space",
+    "instantTitle": "Hot desks and meeting rooms",
+    "instantBadge": "Confirmed instantly",
+    "instantSteps": [
+      {
+        "title": "Pick a space and time",
+        "text": "We show only the times that are free, and any add-ons you can book with it."
+      },
+      {
+        "title": "Pay on the secure page",
+        "text": "We hold your slot for 15 minutes while you pay. If the time runs out, the slot is released."
+      },
+      {
+        "title": "Get your confirmation and invoice",
+        "text": "Your booking is confirmed automatically after payment, and the invoice is in your account."
+      }
+    ],
+    "requestTitle": "Dedicated desks and private offices",
+    "requestBadge": "After review",
+    "requestSteps": [
+      {
+        "title": "Send your request",
+        "text": "Space type, start date and term, with the documents that identify your business."
+      },
+      {
+        "title": "Our team reviews it",
+        "text": "We contact you about the deposit and invoice, following our usual process."
+      },
+      {
+        "title": "Your booking is confirmed",
+        "text": "Follow the status and invoices in your account, and pay by the methods we accept."
+      }
+    ],
+    "ctaTitle": "Ready to start at Flux?",
+    "ctaText": "Create an account to book and keep your invoices and packages in one place.",
+    "createAccount": "Create account"
+  },
+  "picker": {
+    "title": "Check availability",
+    "type": "Space type",
+    "date": "Date",
+    "time": "From",
+    "space": "Space",
+    "go": "Book now"
+  },
+  "spaces": {
+    "title": "Spaces",
+    "lead": "Every space below is open for booking or requests. Prices are shown before VAT details, which appear on your invoice.",
+    "groupInstant": "Book online",
+    "groupRequest": "Request a monthly space",
+    "empty": "No spaces are listed right now. Please check back soon or contact us."
+  },
+  "detail": {
+    "about": "About this space",
+    "amenities": "What is included",
+    "cancellation": "Cancellation",
+    "cancellationText": "You can cancel online from your account up to 24 hours before the start time. If you cancel after paying, we record a refund request and our team handles it.",
+    "policyLink": "Cancellation and refund policy",
+    "bookTitle": "Book your slot",
+    "requestTitle": "Request this space",
+    "date": "Date",
+    "startTime": "Start time",
+    "duration": "Duration",
+    "hours1": "1 hour",
+    "hours2": "2 hours",
+    "hours3": "3 hours",
+    "slotsHelp": "Struck-through times are taken.",
+    "conflict": "This length overlaps a booked time. Choose a shorter length or another start time.",
+    "summaryWhen": "When",
+    "summaryLine": "{hours} × {price}",
+    "total": "Total",
+    "bookAndPay": "Book and pay",
+    "holdNote": "We hold your slot for 15 minutes while you pay. Nothing is charged until you finish paying.",
+    "packageNote": "Have a package?",
+    "signInToUse": "Sign in",
+    "packageNoteEnd": "to use your balance.",
+    "loading": "Checking availability",
+    "loadError": "We could not load availability. Try again in a moment.",
+    "retry": "Try again",
+    "dayTitle": "Day pass",
+    "seatsLeft": "{n} of {total} seats left on this day",
+    "dayTotal": "Total for one day",
+    "dayHelp": "Pick the date you want to work. You choose your seat when you arrive.",
+    "requestLead": "Send a request and our team will review it. You are not charged now.",
+    "earliestStart": "Earliest start date",
+    "startDate": "Preferred start date",
+    "term": "Term",
+    "term3": "3 months",
+    "term6": "6 months",
+    "term12": "12 months",
+    "requestCta": "Request this space",
+    "requestNote": "A new account is marked Pending approval until our team reviews your request. You can still book hot desks and meeting rooms meanwhile.",
+    "notFound": "We could not find that space."
+  },
+  "packages": {
+    "title": "Packages",
+    "lead": "Prepaid hours and days for meeting rooms and hot desks. Once you hold a package, you can apply it online to any booking it covers in full.",
+    "hours": "{n} hours",
+    "days": "{n} days",
+    "validity": "Valid for {n} days",
+    "appliesMeeting": "Meeting rooms",
+    "appliesHotDesk": "Hot desks",
+    "ask": "Ask about this package",
+    "howTitle": "How packages work",
+    "how": [
+      "Our team sets up your package after you ask. You pay by cash, bank transfer, card machine, Instapay or mobile wallet.",
+      "Your balance and a QR code for reception appear in your account.",
+      "At checkout, a package that covers the booking in full confirms it with no payment. Otherwise you pay the full price."
+    ],
+    "empty": "No packages are listed right now. Contact us to ask about options."
+  },
+  "contact": {
+    "title": "Find us in El Seyouf, Alexandria",
+    "lead": "Visit during reception hours, or send a message and we will reply within one working day.",
+    "mapLabel": "Map: [branch location]",
+    "formTitle": "Send us a message",
+    "formLead": "Your message goes to the branch inbox.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Reception hours",
+    "name": "Name",
+    "emailField": "Email address",
+    "message": "Your message",
+    "send": "Send message",
+    "sending": "Sending",
+    "sent": "Message sent",
+    "sentText": "Thank you. We will reply by email within one working day.",
+    "another": "Send another message",
+    "errName": "Enter your name.",
+    "errEmail": "Enter a valid email address, like name@example.com.",
+    "errMessage": "Write a message of at least 5 characters.",
+    "errRate": "You have sent several messages in a short time. Please wait a few minutes and try again.",
+    "errGeneral": "We could not send your message. Try again, or call us.",
+    "aboutPrefill": "I would like to ask about: {name}"
+  },
+  "about": {
+    "title": "About Flux Business Hub",
+    "lead": "Flux Business Hub runs coworking and business-hub spaces in Alexandria.",
+    "blocks": [
+      {
+        "title": "Spaces for how you work",
+        "text": "Take a hot desk for a day, a meeting room for an hour, or settle in with a dedicated desk or private office by the month."
+      },
+      {
+        "title": "One system for staff and customers",
+        "text": "Prices, availability and invoices come from one source, so what you see online is what our team sees at reception."
+      },
+      {
+        "title": "In Arabic and English",
+        "text": "The whole site and your account work in both languages, right to left or left to right."
+      }
+    ],
+    "storyNote": "Brand story to be supplied by Flux Business Hub."
+  },
+  "account": {
+    "title": "Your Flux account",
+    "lead": "Sign in to book, follow your requests and keep invoices and packages in one place.",
+    "intent": "You were about to continue with {space}.",
+    "pending": "The customer portal is part of the next release. This page is where sign in and registration will appear.",
+    "contactFirst": "Until then, contact the branch to book or request a space.",
+    "contactLink": "Contact the branch"
+  },
+  "legal": {
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "cancellation": "Cancellation and refund policy",
+    "pending": "The final text will be supplied by Flux Business Hub and published here."
+  },
+  "footer": {
+    "tagline": "Coworking and business-hub spaces in El Seyouf, Alexandria.",
+    "spaces": "Spaces",
+    "legal": "Legal",
+    "contactHeading": "Contact",
+    "rights": "© 2026 Flux Business Hub"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you opened does not exist or has moved.",
+    "home": "Back to home"
+  },
+  "units": {
+    "hour": "/ hour",
+    "day": "/ day",
+    "month": "/ month"
+  }
+}

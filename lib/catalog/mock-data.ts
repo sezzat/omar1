@@ -1,0 +1,206 @@
+import type { PublicPackageType, PublicSpace } from "./types";
+
+/**
+ * Sample catalogue standing in for the Phase 1 backend. Names, capacities and prices are
+ * illustrative until the real catalogue is connected through FLUX_API_URL.
+ * A private (isPublic: false) record is included so the filter is exercised.
+ */
+type MockSpace = Omit<PublicSpace, "isPublic"> & { isPublic: boolean };
+type MockPackage = Omit<PublicPackageType, "isPublic"> & { isPublic: boolean };
+
+const noPhotos = (ar: string, en: string) => [{ url: null, alt: { ar, en } }];
+
+export const mockSpaces: MockSpace[] = [
+  {
+    id: "spc_hot_desk_zone",
+    slug: "hot-desk-zone",
+    kind: "hot-desk",
+    isPublic: true,
+    bookingMode: "instant",
+    name: { ar: "ركن عمل ليوم واحد", en: "Hot desk / day pass" },
+    summary: {
+      ar: "مقعد في المنطقة المشتركة مع إنترنت وقهوة، يُحجز بالتاريخ.",
+      en: "A seat in the shared area with internet and coffee, booked by date.",
+    },
+    description: {
+      ar: "اختر أي مقعد متاح في المنطقة المشتركة ليوم كامل. يتأكد حجزك تلقائياً بعد نجاح الدفع.",
+      en: "Take any open seat in the shared area for a full day. Your booking is confirmed automatically once you pay.",
+    },
+    capacity: 20,
+    quantityBased: true,
+    floor: 1,
+    amenities: ["wifi", "coffee", "lockers", "ac"],
+    photos: noPhotos("المنطقة المشتركة", "Shared area"),
+    prices: [{ unit: "day", amount: 120 }],
+    fromPrice: { unit: "day", amount: 120 },
+  },
+  {
+    id: "spc_meeting_room_a",
+    slug: "meeting-room-a",
+    kind: "meeting-room",
+    isPublic: true,
+    bookingMode: "instant",
+    name: { ar: "قاعة الاجتماعات A", en: "Meeting Room A" },
+    summary: {
+      ar: "قاعة بشاشة عرض لفرق حتى 10 أشخاص، تُحجز بالساعة.",
+      en: "A room with a display screen for teams of up to 10, booked by the hour.",
+    },
+    description: {
+      ar: "قاعة هادئة لاجتماعات الفرق وجلسات العملاء. تحجزها بالساعة، ويتأكد حجزك تلقائياً بعد نجاح الدفع.",
+      en: "A quiet room for team meetings and client sessions. Book it by the hour; your booking is confirmed automatically once you pay.",
+    },
+    capacity: 10,
+    quantityBased: false,
+    floor: 2,
+    amenities: ["wifi", "screen", "whiteboard", "coffee", "ac"],
+    photos: noPhotos("قاعة الاجتماعات A", "Meeting Room A"),
+    prices: [{ unit: "hour", amount: 350 }],
+    fromPrice: { unit: "hour", amount: 350 },
+  },
+  {
+    id: "spc_meeting_room_b",
+    slug: "meeting-room-b",
+    kind: "meeting-room",
+    isPublic: true,
+    bookingMode: "instant",
+    name: { ar: "قاعة الاجتماعات B", en: "Meeting Room B" },
+    summary: {
+      ar: "قاعة أصغر لستة أشخاص، مناسبة للقاءات القصيرة.",
+      en: "A smaller room for six people, suited to short meetings.",
+    },
+    description: {
+      ar: "قاعة صغيرة بسبورة ومقاعد مريحة. تُحجز بالساعة ويتأكد الحجز بعد الدفع.",
+      en: "A compact room with a whiteboard and comfortable seating. Book it by the hour; it is confirmed after payment.",
+    },
+    capacity: 6,
+    quantityBased: false,
+    floor: 1,
+    amenities: ["wifi", "whiteboard", "ac"],
+    photos: noPhotos("قاعة الاجتماعات B", "Meeting Room B"),
+    prices: [{ unit: "hour", amount: 250 }],
+    fromPrice: { unit: "hour", amount: 250 },
+  },
+  {
+    id: "spc_dedicated_desk_area",
+    slug: "dedicated-desk",
+    kind: "dedicated-desk",
+    isPublic: true,
+    bookingMode: "request",
+    name: { ar: "مكتب ثابت", en: "Dedicated desk" },
+    summary: {
+      ar: "مكتبك الخاص داخل المنطقة المشتركة بعقد شهري، بعد مراجعة فريقنا.",
+      en: "Your own desk in the shared area on a monthly term, after our team reviews.",
+    },
+    description: {
+      ar: "مكتب ثابت باسمك مع خزانة وإنترنت وقهوة. أرسل طلبك وسيتواصل معك فريقنا بشأن العربون والفاتورة.",
+      en: "A desk that is yours, with a locker, internet and coffee. Send a request and our team will contact you about the deposit and invoice.",
+    },
+    capacity: 1,
+    quantityBased: false,
+    floor: 1,
+    amenities: ["wifi", "lockers", "coffee", "ac"],
+    photos: noPhotos("المكتب الثابت", "Dedicated desk"),
+    prices: [{ unit: "month", amount: 2800 }],
+    fromPrice: { unit: "month", amount: 2800 },
+  },
+  {
+    id: "spc_private_office_204",
+    slug: "private-office-204",
+    kind: "private-office",
+    isPublic: true,
+    bookingMode: "request",
+    name: { ar: "مكتب خاص 204", en: "Private Office 204" },
+    summary: {
+      ar: "غرفة مغلقة لفريقك من 4 مكاتب بعقد شهري، بعد مراجعة فريقنا.",
+      en: "A closed room for a team of four desks on a monthly term, after our team reviews.",
+    },
+    description: {
+      ar: "مكتب خاص بباب مغلق لفريق صغير. أرسل طلبك وسيتواصل معك فريقنا بشأن العربون والفاتورة.",
+      en: "A private office with its own door for a small team. Send a request and our team will contact you about the deposit and invoice.",
+    },
+    capacity: 4,
+    quantityBased: false,
+    floor: 2,
+    amenities: ["wifi", "door", "ac", "coffee", "printing"],
+    photos: noPhotos("المكتب الخاص 204", "Private Office 204"),
+    prices: [{ unit: "month", amount: 9500 }],
+    fromPrice: { unit: "month", amount: 9500 },
+  },
+  {
+    id: "spc_storage_room",
+    slug: "storage-room",
+    kind: "dedicated-desk",
+    isPublic: false,
+    bookingMode: "request",
+    name: { ar: "غرفة تخزين", en: "Storage room" },
+    summary: { ar: "للاستخدام الداخلي.", en: "Internal use." },
+    description: { ar: "للاستخدام الداخلي.", en: "Internal use." },
+    capacity: 1,
+    quantityBased: false,
+    floor: 0,
+    amenities: [],
+    photos: [],
+    prices: [{ unit: "month", amount: 500 }],
+    fromPrice: { unit: "month", amount: 500 },
+  },
+];
+
+export const mockPackageTypes: MockPackage[] = [
+  {
+    id: "pkt_meeting_10h",
+    slug: "meeting-room-10-hours",
+    isPublic: true,
+    name: { ar: "باقة 10 ساعات لقاعات الاجتماعات", en: "Meeting room, 10 hours" },
+    description: {
+      ar: "10 ساعات تستخدمها في أي قاعة اجتماعات، بسعر أقل من الحجز المنفرد.",
+      en: "10 hours to use in any meeting room, priced below booking hour by hour.",
+    },
+    unit: "hours",
+    quantity: 10,
+    validityDays: 60,
+    priceEgp: 3000,
+    appliesTo: "meeting-room",
+  },
+  {
+    id: "pkt_hot_desk_10d",
+    slug: "hot-desk-10-days",
+    isPublic: true,
+    name: { ar: "باقة 10 أيام لركن العمل", en: "Hot desk, 10 days" },
+    description: {
+      ar: "10 أيام عمل في المنطقة المشتركة، تستخدمها متى شئت خلال مدة الصلاحية.",
+      en: "10 days in the shared area, to use whenever you like within the validity period.",
+    },
+    unit: "days",
+    quantity: 10,
+    validityDays: 60,
+    priceEgp: 1000,
+    appliesTo: "hot-desk",
+  },
+  {
+    id: "pkt_hot_desk_20d",
+    slug: "hot-desk-20-days",
+    isPublic: true,
+    name: { ar: "باقة 20 يوماً لركن العمل", en: "Hot desk, 20 days" },
+    description: {
+      ar: "20 يوم عمل في المنطقة المشتركة بسعر يوم أقل.",
+      en: "20 days in the shared area at a lower price per day.",
+    },
+    unit: "days",
+    quantity: 20,
+    validityDays: 90,
+    priceEgp: 1800,
+    appliesTo: "hot-desk",
+  },
+  {
+    id: "pkt_internal_staff",
+    slug: "internal-staff",
+    isPublic: false,
+    name: { ar: "باقة داخلية", en: "Internal package" },
+    description: { ar: "للاستخدام الداخلي.", en: "Internal use." },
+    unit: "hours",
+    quantity: 1,
+    validityDays: 30,
+    priceEgp: 0,
+    appliesTo: "meeting-room",
+  },
+];
