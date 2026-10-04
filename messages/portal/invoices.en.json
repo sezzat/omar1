@@ -1,1 +1,33 @@
-{}
+{
+  "title": "Invoices",
+  "subtitle": "Your invoices and what is still to pay.",
+  "outstanding": "Total outstanding",
+  "outstandingNone": "Nothing to pay right now.",
+  "outstandingCount": "{n} open invoices",
+  "outstandingOne": "1 open invoice",
+  "tabsLabel": "Filter invoices",
+  "tabs": { "all": "All", "outstanding": "Outstanding", "paid": "Paid" },
+  "table": {
+    "caption": "Invoices",
+    "number": "Number",
+    "description": "Description",
+    "booking": "Booking",
+    "issued": "Issued",
+    "due": "Due",
+    "amount": "Amount",
+    "paid": "Paid",
+    "status": "Status",
+    "pdf": "PDF"
+  },
+  "pdfButton": "Download invoice",
+  "pdfBusy": "Preparing PDF",
+  "pdfFailed": "We could not download this invoice. Try again.",
+  "pdfAria": "Download invoice {number}",
+  "none": "None",
+  "emptyTitle": "No invoices yet",
+  "emptyText": "Invoices for your bookings and monthly plans will appear here.",
+  "emptyFilter": "No invoices in this view",
+  "emptyFilterText": "Choose All to see every invoice.",
+  "payNote": "Monthly invoices are paid at reception by cash, bank transfer, card machine, Instapay or mobile wallet. Online payment of invoices is coming later.",
+  "vatNote": "VAT: shown when tax settings are enabled."
+}

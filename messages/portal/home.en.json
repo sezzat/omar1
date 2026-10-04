@@ -1,1 +1,52 @@
-{}
+{
+  "greeting": "Hello, {name}",
+  "book": "Book a space",
+  "pendingBanner": "Your request is being reviewed. Our team will contact you about the deposit and invoice. You can still book hot desks and meeting rooms meanwhile.",
+  "upcoming": {
+    "title": "Upcoming bookings",
+    "all": "View all bookings",
+    "emptyTitle": "No upcoming bookings",
+    "emptyText": "Book a hot desk or a meeting room and it will appear here.",
+    "emptyAction": "Book a space"
+  },
+  "requests": {
+    "title": "Pending requests",
+    "emptyTitle": "No requests waiting",
+    "emptyText": "Requests for a dedicated desk or a private office appear here until our team reviews them.",
+    "note": "Our team will contact you about the deposit and invoice."
+  },
+  "invoices": {
+    "title": "Outstanding invoices",
+    "all": "View all invoices",
+    "emptyTitle": "No outstanding invoices",
+    "emptyText": "Invoices that still need payment will appear here.",
+    "note": "Pay monthly invoices at reception by cash, bank transfer, card machine, Instapay or mobile wallet. Online payment for invoices is coming later.",
+    "columns": { "number": "Invoice", "description": "Description", "due": "Due date", "amount": "Amount", "status": "Status", "file": "PDF" },
+    "overdue": "Overdue since {date}",
+    "dueOn": "Due {date}",
+    "balance": "{amount} left to pay",
+    "download": "Download PDF",
+    "downloadLabel": "Download invoice {number} as PDF",
+    "failed": "We could not download the invoice. Try again in a moment."
+  },
+  "packages": {
+    "title": "Package balance",
+    "all": "View packages",
+    "emptyTitle": "No active package",
+    "emptyText": "A package gives you prepaid hours or days. Ask reception about packages.",
+    "remaining": "{remaining} of {total} {unit} left",
+    "hours": "hours",
+    "days": "days",
+    "valid": "Valid until {date}",
+    "qrLine": "Show this code at reception to check in and use your balance.",
+    "qrAlt": "QR code for package {name}",
+    "qrFallback": "Code if the image does not load:",
+    "qrFailed": "We could not draw the QR code. Give reception the code below."
+  },
+  "help": {
+    "title": "Need help?",
+    "text": "Contact the El Seyouf team and we will help.",
+    "link": "Contact us"
+  },
+  "retryCard": "We could not load this page."
+}

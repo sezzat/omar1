@@ -1,0 +1,40 @@
+/* Booking screens (home, list, detail). Prefix: bk- */
+.bk-row { position: relative; }
+.bk-name { font-weight: 500; color: var(--ink); text-decoration: none; }
+.bk-name:hover { text-decoration: underline; }
+.bk-name::after { content: ""; position: absolute; inset: 0; }
+.bk-row .btn, .bk-row .bk-actions a, .bk-row .bk-actions button { position: relative; z-index: 1; }
+.bk-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); }
+.bk-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.bk-clock { font-variant-numeric: tabular-nums; font-weight: 600; }
+.bk-note { color: var(--warning); font-size: 13px; line-height: 20px; font-weight: 500; }
+.bk-fail { color: var(--danger); font-size: 13px; line-height: 20px; }
+
+.bk-status { padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--success-soft); font-size: 14px; line-height: 22px; }
+.bk-status:focus { outline: 2px solid var(--brand-green-strong); outline-offset: 2px; }
+
+.bk-tabpanel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-card); margin-top: var(--space-4); }
+.bk-tabpanel:focus-visible { outline-offset: 2px; }
+
+.bk-dl { display: grid; grid-template-columns: minmax(120px, 200px) minmax(0, 1fr); gap: var(--space-3) var(--space-4); margin: 0; }
+.bk-dl dt { color: var(--ink-muted); font-size: 14px; }
+.bk-dl dd { margin: 0; overflow-wrap: anywhere; }
+.bk-section { display: flex; flex-direction: column; gap: var(--space-3); }
+.bk-section h2 { font-size: 18px; line-height: 26px; font-weight: 600; }
+.bk-clock--big { font-size: 32px; line-height: 40px; }
+.bk-heading:focus { outline: none; }
+
+.bk-qr { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; }
+.bk-qr img { width: 176px; height: 176px; image-rendering: pixelated; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.bk-qr code { font-size: 12px; overflow-wrap: anywhere; display: block; }
+.bk-pkg { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-6); border-top: 1px solid var(--border); }
+.bk-pkg:first-child { border-top: 0; }
+
+@media (max-width: 640px) {
+  .bk-dl { grid-template-columns: minmax(0, 1fr); gap: var(--space-1); }
+  .bk-dl dd { margin-bottom: var(--space-3); }
+  .bk-pkg { padding-inline: var(--space-4); }
+  .bk-row .btn { min-height: 44px; }
+  .tab { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) { .bk-status, .bk-tabpanel { transition: none; } }

@@ -1,1 +1,111 @@
-{}
+{
+  "meta": {
+    "login": { "title": "Sign in", "description": "Sign in to your Flux Business Hub account to book, pay and follow your requests." },
+    "register": { "title": "Create an account", "description": "Create a Flux Business Hub account to book desks and meeting rooms in El Seyouf, Alexandria." },
+    "verify": { "title": "Verify your email", "description": "Confirm your email address for your Flux Business Hub account." },
+    "forgot": { "title": "Reset your password", "description": "Request a link to choose a new Flux Business Hub password." },
+    "reset": { "title": "Choose a new password", "description": "Choose a new password for your Flux Business Hub account." }
+  },
+  "password": {
+    "rule": "At least 8 characters, with a letter and a number.",
+    "show": "Show",
+    "hide": "Hide",
+    "showLabel": "Show password",
+    "hideLabel": "Hide password"
+  },
+  "fieldErrors": {
+    "type": "Choose Individual or Company.",
+    "name": "Enter your full name, at least 2 characters.",
+    "companyName": "Enter your company name.",
+    "email": "Enter a valid email address, for example name@example.com.",
+    "mobile": "Enter an Egyptian mobile number, for example 01012345678.",
+    "password": "Use at least 8 characters with a letter and a number.",
+    "consent": "Tick the box to agree before creating your account.",
+    "loginEmail": "Enter your email address.",
+    "loginPassword": "Enter your password.",
+    "confirm": "The two passwords do not match."
+  },
+  "dev": {
+    "title": "Development only: open the verification email",
+    "resetTitle": "Development only: open the reset email",
+    "text": "No email is sent in development. Use this link instead.",
+    "open": "Open the link"
+  },
+  "login": {
+    "title": "Sign in",
+    "lead": "Use the email and password of your Flux account.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in",
+    "forgot": "Forgot your password?",
+    "noAccount": "New to Flux?",
+    "create": "Create an account",
+    "resetDone": "Your password was changed. Sign in with the new password.",
+    "verifiedDone": "Your email is verified. Sign in to continue.",
+    "verificationRequired": "This account is not active yet. We sent a verification link to the email address we have on file for your account. Open it, then sign in again."
+  },
+  "register": {
+    "title": "Create an account",
+    "lead": "One account for bookings, packages and invoices.",
+    "type": "Account type",
+    "individual": "Individual",
+    "company": "Company",
+    "name": "Full name",
+    "companyName": "Company name",
+    "email": "Email",
+    "emailHelp": "We send a verification link to this address.",
+    "mobile": "Mobile number",
+    "mobileHelp": "Egyptian number, for example 01012345678 or +20 101 234 5678.",
+    "password": "Password",
+    "language": "Language for our emails",
+    "arabic": "العربية",
+    "english": "English",
+    "consent": "I agree to the processing of my personal data as described in the",
+    "consentLink": "privacy notice",
+    "consentNewTab": "(opens in a new tab)",
+    "consentDocs": "Identity and registration documents you upload are stored privately and used only to review your requests.",
+    "submit": "Create account",
+    "submitting": "Creating account",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "doneTitle": "Check your email",
+    "doneText": "We sent a verification link. If you are already a Flux customer, it goes to the email address we have on file.",
+    "doneNext": "Open the link, then sign in. The link works for a limited time.",
+    "toSignIn": "Go to sign in"
+  },
+  "verify": {
+    "loadingTitle": "Verifying your email",
+    "loadingText": "This takes a moment.",
+    "successTitle": "Your email is verified",
+    "successText": "You can now pay for bookings and receive notices from us.",
+    "continue": "Continue to your account",
+    "invalidTitle": "This link did not work",
+    "invalidText": "The link is not valid or has expired. Sign in and choose \"Send the link again\" in the banner at the top of your account.",
+    "signIn": "Sign in",
+    "errorTitle": "We could not verify your email",
+    "retry": "Try again"
+  },
+  "forgot": {
+    "title": "Reset your password",
+    "lead": "Enter the email of your account and we will send a link to choose a new password.",
+    "email": "Email",
+    "submit": "Send reset link",
+    "submitting": "Sending",
+    "back": "Back to sign in",
+    "doneTitle": "Check your email",
+    "doneText": "If an account exists for this email, we sent a link to choose a new password. The link works for a limited time.",
+    "another": "Use a different email"
+  },
+  "reset": {
+    "title": "Choose a new password",
+    "lead": "Choose a password you do not use anywhere else.",
+    "password": "New password",
+    "confirm": "Confirm new password",
+    "submit": "Save new password",
+    "submitting": "Saving",
+    "invalidTitle": "This link did not work",
+    "invalidText": "The link is not valid or has expired. Request a new link and use the newest email we send.",
+    "requestNew": "Request a new link"
+  }
+}

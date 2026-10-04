@@ -1,0 +1,15 @@
+.pf { display: flex; flex-direction: column; gap: var(--space-6); max-width: 720px; }
+.pf-section form, .pf-section .pcard__body { display: flex; flex-direction: column; gap: var(--space-4); }
+.pf-help { margin: 0; }
+.pf-readonly { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); min-height: var(--control-height); }
+.pf-pw { display: flex; gap: var(--space-2); }
+.pf-pw .input { flex: 1 1 auto; min-width: 0; }
+.pf-doc-meta { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); }
+.pf-doc-name { overflow-wrap: anywhere; }
+.pf-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.pf-section .btn { min-height: 44px; }
+.pf-ok { margin: 0; }
+@media (max-width: 640px) {
+  .pf-section .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .pf-section .btn--sm { min-height: 44px; }
+}

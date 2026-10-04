@@ -1,1 +1,115 @@
-{}
+{
+  "title": "My bookings",
+  "subtitle": "Your bookings and monthly requests in one place.",
+  "tabsLabel": "Booking lists",
+  "tabs": { "upcoming": "Upcoming", "past": "Past", "requests": "Requests" },
+  "empty": {
+    "upcoming": { "title": "No upcoming bookings", "text": "Bookings you make for hot desks and meeting rooms will appear here." },
+    "past": { "title": "No past bookings", "text": "Completed and cancelled bookings will appear here." },
+    "requests": { "title": "No requests waiting", "text": "Requests for a dedicated desk or a private office will appear here while our team reviews them." }
+  },
+  "book": "Book a space",
+  "view": "View booking",
+  "reference": "Reference {ref}",
+  "when": {
+    "day": "{date}",
+    "time": "{date}, {range}",
+    "monthly": "Starts {date} for {term}"
+  },
+  "paymentCheck": "We are checking your payment",
+  "holdLeft": "Held for you: {time}",
+  "holdEnded": "The hold has ended",
+  "holdMinutes": "Your slot is held for about {n} minutes.",
+  "holdSeconds": "Your slot is held for less than a minute.",
+  "holdGone": "The hold has ended and the slot was released.",
+  "actions": {
+    "cancel": "Cancel booking",
+    "release": "Release this slot",
+    "pay": "Continue to payment",
+    "paying": "Opening payment page",
+    "downloadInvoice": "Download invoice",
+    "downloading": "Preparing file",
+    "back": "Back to my bookings",
+    "contact": "Contact us"
+  },
+  "cancelDialog": {
+    "title": "Cancel this booking?",
+    "keep": "Keep booking",
+    "textPlain": "The booking is cancelled and the time goes back to the calendar.",
+    "textPending": "Your request is withdrawn. Nothing is charged.",
+    "textPaid": "The booking is cancelled and we record a refund request. Our team refunds you through the payment provider.",
+    "textPackage": "The booking is cancelled and the package balance used for it returns to you."
+  },
+  "releaseDialog": {
+    "title": "Release this slot?",
+    "text": "The slot goes back to the calendar and nothing is charged. You can book it again if it is still free.",
+    "confirm": "Release slot",
+    "keep": "Keep holding"
+  },
+  "cancelled": "Booking {ref} is cancelled.",
+  "released": "The slot for booking {ref} is released.",
+  "invoiceFailed": "We could not download the invoice. Try again in a moment.",
+  "detail": {
+    "notFoundTitle": "Booking not found",
+    "summary": "Summary",
+    "fields": {
+      "reference": "Reference",
+      "space": "Space",
+      "kind": "Type",
+      "date": "Date",
+      "time": "Time",
+      "startDate": "Start date",
+      "term": "Term",
+      "price": "Price",
+      "status": "Status",
+      "notes": "Notes"
+    },
+    "free": "Covered by package",
+    "mode": { "instant": "Booking", "request": "Request" },
+    "next": {
+      "title": "What happens next",
+      "draft": "Your slot is held for you. Pay before the hold ends to confirm it.",
+      "pending": "We received your request. Our team will review it and contact you about the deposit and invoice. You can follow the status here.",
+      "confirmedInstant": "Your booking is confirmed. Come to reception at the start time.",
+      "confirmedRequest": "Your request is approved. Our team will contact you about the start date. Invoices appear under Invoices.",
+      "checkedIn": "You are checked in.",
+      "completed": "This booking is complete. Its invoice stays available under Invoices.",
+      "cancelledCustomer": "You cancelled this booking.",
+      "cancelledHold": "The hold ended before payment, so the slot was released. Book the time again if you still need it.",
+      "cancelledStaff": "Our team cancelled this booking. Contact us if you have questions.",
+      "noShow": "You did not check in for this booking. Contact us if this is a mistake."
+    },
+    "review": {
+      "title": "We are checking your payment",
+      "text": "We received your payment after the held time expired, and the slot was no longer free. Our team will contact you and refund you."
+    },
+    "hold": {
+      "title": "Complete your payment",
+      "left": "Time left"
+    },
+    "returned": {
+      "confirming": "We are confirming your payment",
+      "confirmingText": "This usually takes a few seconds. You can stay on this page.",
+      "slow": "Confirmation can take a few minutes",
+      "slowText": "Your booking appears as Confirmed once the payment provider confirms the payment. You can leave this page and check again later.",
+      "done": "Your payment is confirmed"
+    },
+    "cancel": {
+      "title": "Cancellation",
+      "until": "You can cancel online until {when}.",
+      "refund": "This booking is paid. If you cancel, we record a refund request and our team refunds you through the payment provider.",
+      "package": "If you cancel, the package balance used for this booking returns to you.",
+      "pending": "You can cancel this request while it is waiting for review.",
+      "closed": "This booking can no longer be cancelled online. The cancellation window closed on {when}.",
+      "closedHelp": "If you need to change it, contact us and we will help.",
+      "refundRecorded": "A refund request is recorded. Our team refunds you through the payment provider.",
+      "packageReturned": "The package balance used for this booking was returned."
+    },
+    "invoice": {
+      "title": "Invoice",
+      "number": "Invoice {number}",
+      "package": "Your package balance covered this booking, so there is nothing to pay.",
+      "loadFailed": "We could not load the invoice."
+    }
+  }
+}

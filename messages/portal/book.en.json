@@ -1,1 +1,172 @@
-{}
+{
+  "title": "Book a space",
+  "subtitle": "Book a hot desk or meeting room now, or request a monthly space.",
+  "modeLegend": "What do you want to do?",
+  "modes": {
+    "instant": { "title": "Book now", "text": "Hot desk day pass or meeting room. Choose a time, then pay online or use a package." },
+    "request": { "title": "Request a monthly space", "text": "Dedicated desk or private office. Send a request and the team will contact you." }
+  },
+  "unavailable": {
+    "text": "New bookings are not available for your account right now. Contact the branch and we will help.",
+    "link": "Contact us"
+  },
+  "noSpaces": { "title": "No spaces to book yet", "text": "Spaces appear here when the branch publishes them. Contact us if you need a space now." },
+  "progress": "Progress",
+  "stepDone": "done",
+  "stepOf": "Step {n} of {total}",
+  "notChosen": "Not chosen yet",
+  "continue": "Continue",
+  "back": "Back",
+  "space": {
+    "capacity": "Up to {n} people",
+    "seats": "{n} seats"
+  },
+  "instant": {
+    "steps": { "space": "Space", "when": "Date and time", "review": "Review and pay" },
+    "space": {
+      "heading": "Choose a space",
+      "legend": "Space",
+      "required": "Choose a space to continue."
+    },
+    "when": {
+      "heading": "Choose date and time",
+      "date": "Date",
+      "dateHelp": "Today or any day in the next 12 months.",
+      "dateInvalid": "Choose today or a later date within the next year.",
+      "duration": "Length",
+      "slots": "Start time",
+      "slotsHelp": "Struck-through times are taken or do not fit the length you chose. Times are on the Alexandria clock.",
+      "slotUnavailable": "not available",
+      "checking": "Checking availability",
+      "noSlots": "No times are left on this day. Choose another date.",
+      "noFit": "{time} is not free for {length}. Choose another start time.",
+      "seatsLeft": "{n} seats left on this day",
+      "seatsOne": "1 seat left on this day",
+      "noSeats": "No seats are left on this day. Choose another date.",
+      "dayPass": "A day pass covers 09:00 to 18:00.",
+      "timeRequired": "Choose a start time to continue.",
+      "dateRequired": "Choose a valid date to continue.",
+      "seatsRequired": "No seats are left on this day. Choose another date to continue."
+    },
+    "review": {
+      "heading": "Review and pay",
+      "payLegend": "How do you want to pay?",
+      "usePackage": "Use my package ({left} left, covers this booking fully)",
+      "payOnline": "Pay online",
+      "packageShort": "Your {name} package has {left} left. That does not cover this booking fully, so you pay the full price.",
+      "packagesFailed": "We could not check your packages. You can still pay online.",
+      "hold": "We hold your slot for 15 minutes while you pay. Nothing is charged until you finish paying.",
+      "holdPackage": "Your package balance is used as soon as you confirm.",
+      "verifyNote": "Verify your email before paying. Use Send the link again in the banner at the top of the page. You can still hold your slot now.",
+      "confirm": "Confirm booking",
+      "pay": "Continue to secure payment",
+      "busyConfirm": "Confirming your booking",
+      "busyPay": "Holding your slot and opening secure payment"
+    },
+    "summary": {
+      "heading": "Your booking",
+      "space": "Space",
+      "date": "Date",
+      "time": "Time",
+      "length": "Length",
+      "price": "Price",
+      "covered": "Covered by your package",
+      "total": "To pay now"
+    },
+    "errors": {
+      "slotTaken": "That time was just taken.",
+      "slotTakenTimes": "Choose one of the nearest free times.",
+      "slotTakenDays": "That day is full. Choose one of the nearest days with seats.",
+      "slotTakenNone": "No nearby option is free. Go back and choose another time or date.",
+      "altTimes": "Nearest free times",
+      "altDays": "Nearest days with seats",
+      "emailNotVerified": "Verify your email before paying. Use Send the link again in the banner at the top of the page, then try again. Your slot stays held for 15 minutes.",
+      "openBooking": "Open the booking",
+      "retry": "Try again",
+      "gateway": "The payment page is not available right now. Nothing was charged and your slot is held.",
+      "holdExpired": "The 15-minute hold ran out and the slot was released.",
+      "chooseAgain": "Choose the time again",
+      "notAllowed": "New bookings are not available for your account right now. Contact the branch and we will help.",
+      "contact": "Contact us",
+      "alreadyBooked": "You already have a booking for this space on that day.",
+      "viewBookings": "Go to My bookings",
+      "invalidTime": "That time cannot be booked. Go back and choose another time."
+    }
+  },
+  "request": {
+    "steps": { "space": "Space", "details": "Start and term", "documents": "Documents and consent" },
+    "space": {
+      "heading": "Choose a space to request",
+      "legend": "Space",
+      "from": "From {price}",
+      "required": "Choose a space to continue."
+    },
+    "details": {
+      "heading": "Start date and term",
+      "startDate": "Preferred start date",
+      "startDateHelp": "From today onward. The team confirms the final date with you.",
+      "startDateInvalid": "Choose today or a later date within the next year.",
+      "term": "Term",
+      "termInvalid": "Choose a term of 3, 6 or 12 months.",
+      "total": "Indicative total",
+      "totalNote": "Based on the monthly price. The team confirms the final amount and deposit in your invoice.",
+      "notes": "Notes",
+      "notesHelp": "Team size, equipment, or anything else we should know.",
+      "notesCount": "{n} of 1000 characters",
+      "notesTooLong": "Notes can be up to 1000 characters."
+    },
+    "documents": {
+      "heading": "Documents and consent",
+      "introIndividual": "Upload your national ID or passport so the team can review your request faster.",
+      "introCompany": "Upload your commercial registration. If you can, add an identity document for the person who will sign.",
+      "optional": "You can send the request without documents. The team will ask for anything missing.",
+      "purpose": "Document type",
+      "purposes": { "identity": "Identity document", "commercial-registration": "Commercial registration", "other": "Other document" },
+      "dropTitle": "Drag files here or",
+      "choose": "Choose files",
+      "hint": "PDF, JPG or PNG, up to 5 MB each.",
+      "private": "Documents are private. Only the Flux team can open them, through short-lived secure links.",
+      "listHeading": "Your documents",
+      "attach": "Attach {name} to this request",
+      "uploading": "Uploading {name}",
+      "uploaded": "{name} uploaded.",
+      "removed": "{name} removed.",
+      "remove": "Remove",
+      "removeLabel": "Remove {name}",
+      "removing": "Removing",
+      "dismiss": "Dismiss",
+      "none": "No documents yet.",
+      "loadFailed": "We could not load your documents.",
+      "fileType": "{name}: upload a PDF, JPG or PNG file.",
+      "fileSize": "{name}: the file is larger than 5 MB. Choose a smaller file.",
+      "fileEmpty": "{name}: the file is empty.",
+      "limit": "You can keep up to 10 documents. Remove one to add another.",
+      "consentBefore": "I agree that Flux Business Hub stores these documents and my details to review this request, as described in the ",
+      "consentLink": "privacy notice",
+      "newTab": "opens in a new tab",
+      "consentAfter": ".",
+      "consentRequired": "Confirm that you agree before sending the request."
+    },
+    "summary": { "heading": "Your request", "space": "Space", "term": "Term", "start": "Start date" },
+    "submit": "Send request",
+    "busy": "Sending your request",
+    "errors": {
+      "tooMany": "You have three requests waiting for review. We will contact you about them first.",
+      "viewBookings": "Go to My bookings",
+      "notAllowed": "New requests are not available for your account right now. Contact the branch and we will help.",
+      "contact": "Contact us"
+    },
+    "done": {
+      "heading": "Request sent",
+      "reference": "Reference",
+      "status": "Status",
+      "nextHeading": "What happens next",
+      "next1": "The team reviews your request.",
+      "next2": "We contact you about the deposit and your invoice.",
+      "next3": "You follow the status in My bookings and pay the invoice with one of our usual methods, such as cash, bank transfer, Instapay or a mobile wallet.",
+      "pendingNote": "If your account is new, its status changes to Pending Approval while we review the request. You can still book hot desks and meeting rooms.",
+      "viewRequest": "View request",
+      "myBookings": "Go to My bookings"
+    }
+  }
+}

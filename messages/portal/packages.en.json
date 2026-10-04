@@ -1,1 +1,31 @@
-{}
+{
+  "title": "Packages",
+  "subtitle": "Prepaid hours and days you can use on bookings.",
+  "how": {
+    "title": "How packages work",
+    "p1": "A package either covers a booking fully, or you pay the full price. It is never split.",
+    "p2": "The balance is reserved when the booking is confirmed and used when you check in.",
+    "p3": "If you cancel in time, the reserved balance returns to the package."
+  },
+  "activeHeading": "Your packages",
+  "pastHeading": "Expired and used up",
+  "pastText": "These packages can no longer be used for new bookings.",
+  "appliesTo": "Applies to {kind}",
+  "units": { "hours": "hours", "days": "days" },
+  "left": "{remaining} of {total} {unit} left",
+  "meterLabel": "Balance of {name}",
+  "reserved": "{n} {unit} reserved for upcoming bookings",
+  "used": "{n} {unit} already used",
+  "validity": "Valid from {from} to {to}",
+  "status": { "Active": "Active", "Expired": "Expired", "Depleted": "Used up" },
+  "qrTitle": "Reception check-in",
+  "qrHelp": "Show this code at reception to check in and use your balance.",
+  "qrAlt": "QR code for package {name}",
+  "qrFailed": "We could not draw the QR code. Read the code below to reception instead.",
+  "qrCodeText": "Code",
+  "emptyTitle": "You have no packages yet",
+  "emptyText": "Packages give you prepaid hours or days. Ask reception to add one to your account, and it will appear here.",
+  "emptyPackages": "See packages you can ask for",
+  "emptyContact": "Contact us",
+  "book": "Book a space"
+}

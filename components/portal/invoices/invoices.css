@@ -1,0 +1,22 @@
+.iv-total { display: flex; align-items: center; gap: var(--space-6); flex-wrap: wrap; }
+.iv-total .kpi__value.is-clear { color: var(--ink-muted); font-size: 20px; }
+.iv-wrap { overflow-x: auto; }
+.iv-wrap:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+.iv-table { min-width: 860px; }
+.iv-table td, .iv-table th { vertical-align: top; }
+.iv-fail { color: var(--danger); font-size: 13px; display: block; margin-top: var(--space-1); }
+.iv-note { display: flex; flex-direction: column; gap: var(--space-2); }
+.iv-foot { font-size: 13px; color: var(--ink-muted); }
+.iv-cards { display: none; list-style: none; margin: 0; padding: 0; }
+.iv-card { padding: var(--space-4); border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: var(--space-3); }
+.iv-card:first-child { border-top: 0; }
+.iv-card__top { display: flex; justify-content: space-between; gap: var(--space-3); align-items: flex-start; }
+.iv-card dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: var(--space-1) var(--space-4); font-size: 14px; }
+.iv-card dt { color: var(--ink-muted); }
+.iv-card dd { margin: 0; text-align: end; }
+.iv-card .btn { min-height: 44px; }
+@media (max-width: 640px) {
+  .iv-wrap { display: none; }
+  .iv-cards { display: block; }
+  .iv-tabs .tab { min-height: 44px; }
+}
