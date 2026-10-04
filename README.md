@@ -45,9 +45,29 @@ About 4 seconds: green sweeps cross the screen, the supplied PNG logo is reveale
 - Skip button, click anywhere, or Esc. Reduced-motion setting shows a static logo for about a second and fades out.
 - Sweep and wipe direction mirror in Arabic (RTL).
 
+## Customer portal
+
+Sign in at `/ar/login` or `/en/login`. Signed-in screens live under `/{lang}/portal`: home, book (instant and monthly request), my bookings, packages, invoices, profile. The mock hosted checkout is `/{lang}/checkout/{session}`.
+
+Demo accounts (password `Flux@2026`; data is in memory and resets on restart):
+
+| Email | State |
+|---|---|
+| mona@example.com | Pending Approval, pending private-office request, 6 of 10 meeting-room hours, outstanding invoices |
+| nour@example.com | Active (English), hot-desk package |
+| omar@example.com | Suspended: can view invoices, cannot book |
+| sara@example.com | Blacklisted: neutral contact-us message, status never shown |
+| newbie@example.com | Active, email not verified (cannot pay online) |
+| existing@example.com | Customer on file with no login: registering with this email links after verification |
+
+Backend (mock, in `lib/portal/` and `app/api/v1/`): customer accounts and sessions (scrypt passwords, 15-minute JWT with audience `flux-customer`, rotating httpOnly refresh cookie with replay detection), registration and matching, 15-minute booking holds, package reserve and consume, 24-hour cancellation window with refund requests, signed payment webhook with idempotency, reconciliation job (`POST /api/v1/internal/reconcile`), late-payment handling, invoices with PDF, private documents with 5-minute signed links, email outbox. In development, `GET /api/v1/dev/outbox?to=` shows queued emails (verification and reset links).
+
+Environment (see `.env.example`): `JWT_SECRET`, `GATEWAY_WEBHOOK_SECRET`, `LINK_SECRET`, `INTERNAL_SECRET` (required in production), `FLUX_HOLD_MINUTES`, `FLUX_CANCEL_WINDOW_HOURS`, `FLUX_ENABLE_DEV_API=1` to expose dev routes in a production build.
+
+Assumptions to confirm: password rule (8+ characters with a letter and a number, because FR-SEC-003 text was not available), hot-desk day runs 09:00 to 18:00 for the cancellation deadline, bookings are 1 to 4 hours between 09:00 and 17:00, invoice PDF is English-only in the mock.
+
 ## Not built yet
 
-- Customer portal and sign in (`/[lang]/account` is a placeholder that receives the booking intent as query parameters).
-- Hosted checkout, holds, webhooks and transactional email (CR-1, CR-2); these belong to the backend modules in the spec.
+- Real gateway, real email provider and the Phase 1 database: the portal runs against the in-memory mock backend.
 - Contact form delivery: `/api/v1/public/contact` validates, rate-limits and has a honeypot, but only logs; connect it to the Email adapter.
 - Photography, branch address, phone, email, hours, map, tagline and the legal texts are placeholders to be supplied.
